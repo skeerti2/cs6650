@@ -18,8 +18,6 @@ public class ClientOnehw {
     private static AtomicInteger successfulRequests = new AtomicInteger();
     private static AtomicInteger unsuccessfulRequests = new AtomicInteger();
     private static AtomicInteger totalRequests = new AtomicInteger();
-    private static CopyOnWriteArrayList<String[]> listData = new CopyOnWriteArrayList<>();
-    private static CopyOnWriteArrayList<Long> latencyList = new CopyOnWriteArrayList<>();
 
 
 
@@ -239,8 +237,8 @@ public class ClientOnehw {
         return theoriticalThroughput;
     }
     public static void main(String[] args) throws ApiException, InterruptedException, IOException {
-        skiersApi.getApiClient().setBasePath("http://localhost:8080/hw1_server_war_exploded/");
-//        skiersApi.getApiClient().setBasePath("http://ec2-34-211-35-199.us-west-2.compute.amazonaws.com:8080/hw1-server_war/");
+//        skiersApi.getApiClient().setBasePath("http://localhost:8080/hw1_server_war_exploded/");
+        skiersApi.getApiClient().setBasePath("http://ec2-34-211-35-199.us-west-2.compute.amazonaws.com:8080/hw1-server_war/");
         skiersApi.getApiClient().setConnectTimeout(1*60*1000);
         Scanner in = new Scanner(System.in);
 

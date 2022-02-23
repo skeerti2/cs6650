@@ -28,8 +28,7 @@ public class ClientTwo {
     private static CopyOnWriteArrayList<String[]> listData = new CopyOnWriteArrayList<>();
     private static CopyOnWriteArrayList<Long> latencyList = new CopyOnWriteArrayList<>();
 
-
-
+    
     private static int getRandomLift(int numLifts){
         int boundedRandomValue = ThreadLocalRandom.current().nextInt(1, numLifts+1);
         return boundedRandomValue;
