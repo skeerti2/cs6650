@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="hw1-server:war2">
+    <output-path>$PROJECT_DIR$/out/artifacts/hw1_server_war2</output-path>
+    <root id="archive" name="hw1-server_war.war">
+      <element id="artifact" artifact-name="hw1-server:war exploded" />
+    </root>
+  </artifact>
+</component>
